@@ -1,0 +1,299 @@
+:root{
+    --maincolor:#00435c;
+    --seccolor:#f2f2f2;
+    --thirdcolor:#ffffff;
+    --red:#fa0000;
+    --green: #2bab3e;
+    --blue: #21b5eb;
+    --orange: #fcb100;
+    --font: #333333;
+
+}
+
+
+
+.body
+{
+    margin: 0;
+    padding: 0;
+}
+.main
+{
+    display: flex;
+    height: 100vh;
+}
+.sidebar
+{
+display: flex;
+flex-direction: column;
+color: var(--thirdcolor);
+background-color: var(--maincolor);
+width: 250px;
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo h1{
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 3.8rem;
+
+}
+.menu ul li{
+    list-style: none;
+
+}
+.menu ul li a{
+    text-decoration: none;
+    color: var(--thirdcolor);
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+
+.main-content{
+    background-color: var(--seccolor);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    overflow: scroll;
+
+}
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+    background-color: var(--thirdcolor);
+    
+}
+
+form .inputs
+{
+    width: 55rem;
+    height: 40px;
+    margin: 20px;
+    border-radius: 0.4rem;
+    border: 1px solid #9b9393
+    
+}
+form i{
+    background-color: #c1bdbd;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    color: var(--thirdcolor);
+}
+.icons 
+{
+    display: flex;
+    gap: 2.2rem;
+}
+.icons i {
+    font-size: 1rem; 
+    background-color: #9b9393;
+    padding: 1rem;
+    color: var(--thirdcolor);
+    border-radius: 50%;
+  }
+
+  .info-top
+  {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 5px 20px;
+  }
+  .info-top h1
+  {
+    color: var(--font);
+  }
+
+  .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+form .calender
+{
+    width: 15rem;
+    background-color: var(--thirdcolor);
+    height: 25px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+.btn
+{
+    display: flex;
+    gap: 2rem;
+}
+.btn button
+{
+    background-color: var(--thirdcolor);
+    border: none;
+    color: var(--font);
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+}
+
+.grid-container
+{
+    margin: 0 20px 5px 10px;
+    display: grid;
+    grid-template-columns: 310px 310px 310px 310px;
+   
+
+}
+
+.card
+{
+    width: 15rem;
+    padding: 1rem 0.7rem 0 1.2rem;
+    border-radius: 10px;
+    background-color: var(--thirdcolor);
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0.3rem;
+}
+.card h1
+{
+    font-weight: 900;
+    font-size: 2rem;
+}
+.card-icon{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: end;
+}
+
+.card-icon a 
+{
+    display: flex;
+    justify-content: flex-end; 
+    text-decoration: none;
+    color: red;
+}
+
+.card-info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card-info h1
+{
+    color: var(--maincolor)
+}
+.card-info-2
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 1px;
+    text-align: right;
+}
+.card-info-2 p
+{
+    color: rgb(151, 147, 147);
+    font-size: 0.7rem;
+
+}
+.card-info-2 h3
+{
+    font-size: 0.8rem;
+}
+
+
+.card-btns
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.1rem;
+
+}
+.card-btns a{
+    text-decoration: none;
+
+}
+.card-btns .occupied
+{
+    color: var(--blue);
+    font-size: 1rem;
+}
+.card-btns .vacant
+{
+    color: var(--green);
+    font-size: 1rem;
+}
+.card-btns .reserved
+{
+    color: var(--orange);
+    font-size: 1rem;
+}
+.card-btns .out-of-order
+{
+    color: var(--red);
+    font-size: 1rem;
+}
+.end-btn
+{
+    background-color: var(--blue);
+    width: 12rem;
+    height: 10px;
+    color: var(--blue);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+
+.end-btn-o
+{
+    background-color: var(--red);
+    width: 12rem;
+    height: 10px;
+    color: var(--blue);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.end-btn-v
+{
+    background-color: var(--green);
+    width: 12rem;
+    height: 10px;
+    color: var(--blue);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.end-btn-r
+{
+    background-color: var(--orange);
+    width: 12rem;
+    height: 10px;
+    color: var(--blue);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+
+
+
+
+
+
